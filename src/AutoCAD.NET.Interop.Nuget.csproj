@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>AutoCAD.NET.Interop</PackageId>
+    <Version>$(Version)</Version>
+    <Authors>Zhmayev Yaroslav</Authors>
+    <Company>CodeCave LLC</Company>
+    <PackageTags>autocad, sdk, api, sdk, autodesk, objectarx, autocadsdk, C#, addin, plugin, command, external application, applicaion, $(AutoCadVersion), autocad$(AutoCadVersion)</PackageTags>
+    <Description>It contains Autodesk.AutoCAD.Interop.Common.dll and Autodesk.AutoCAD.Interop.dll which were copied from the `inc-x64` subdirectory of the ObjectARX 2013 SDK. Their `CopyLocal` property is `false`.</Description>
+    <Copyright>© Autodesk Inc. All rights reserved</Copyright>
+    <PackageProjectUrl>https://www.autodesk.com/developer-network/platform-technologies/autocad</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CodeCavePro/AutoCAD.NET.Interop</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageIcon>AutoCAD.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>none</DebugType>
+    <OutputPath>..\dist\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="../lib/$(AutoCadVersion)/x64/*" Pack="true" PackagePath="lib\$(TargetPath)" />
+    <Content Include="../assets/LICENSE.txt" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="../assets/AutoCAD-2014.png" Pack="true" PackagePath="AutoCAD.png" Condition="'$(AutoCadVersion)' == '2016' Or '$(AutoCadVersion)' == '2017'" />
+    <Content Include="../assets/AutoCAD-2018.png" Pack="true" PackagePath="AutoCAD.png" Condition="'$(AutoCadVersion)' != '2016' And '$(AutoCadVersion)' != '2017'" />
+  </ItemGroup>
+
+  <!--
+    Disable the normal compilation process
+  -->
+  <Target Name="CoreCompile" />
+  <PropertyGroup>
+    <BuildInParallel>false</BuildInParallel>
+    <SkipCopyBuildProduct>true</SkipCopyBuildProduct>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+
+</Project>

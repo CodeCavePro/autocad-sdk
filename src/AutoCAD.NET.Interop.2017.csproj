@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+  <PropertyGroup>
+    <!--
+    https://knowledge.autodesk.com/support/revit-products/downloads/caas/downloads/content/autodesk-revit-2017-product-updates.html
+    -->
+    <AutoCadVersion>2017</AutoCadVersion>
+    <Platform>x64</Platform>
+    <Version>21.0.52</Version>
+    <TargetPath>net45</TargetPath>
+  </PropertyGroup>
+
+  <Import Project="AutoCAD.NET.Interop.Nuget.csproj">
+  </Import>
+</Project>

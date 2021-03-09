@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD156593-67B7-4035-9E7C-108CD2B4C8FC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		global.json = global.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCAD.NET.Interop.Nuget", "src\AutoCAD.NET.Interop.Nuget.csproj", "{2D5255D6-4B1D-4035-9B9A-9BA740215166}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCAD.NET.Interop.2016", "src\AutoCAD.NET.Interop.2016.csproj", "{5FAF9175-D161-4622-8317-76BBCA0D1BDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCAD.NET.Interop.2017", "src\AutoCAD.NET.Interop.2017.csproj", "{1CF96827-D410-41AA-AB5B-D6DB712EC454}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCAD.NET.Interop.2018", "src\AutoCAD.NET.Interop.2018.csproj", "{6DED0A26-B170-4CF8-9703-D7BF20D9545B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCAD.NET.Interop.2019", "src\AutoCAD.NET.Interop.2019.csproj", "{AE36F2A5-987D-41EA-BB40-8576B00C33C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCAD.NET.Interop.2020", "src\AutoCAD.NET.Interop.2020.csproj", "{C319ADE3-2850-44C0-AD18-99122B23CC1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoCAD.NET.Interop.2021", "src\AutoCAD.NET.Interop.2021.csproj", "{15B47447-5BAB-494C-B879-68B7624F3B39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D5255D6-4B1D-4035-9B9A-9BA740215166}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2D5255D6-4B1D-4035-9B9A-9BA740215166}.Release|x64.ActiveCfg = Release|Any CPU
+		{2D5255D6-4B1D-4035-9B9A-9BA740215166}.Release|x64.Build.0 = Release|Any CPU
+		{5FAF9175-D161-4622-8317-76BBCA0D1BDD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5FAF9175-D161-4622-8317-76BBCA0D1BDD}.Debug|x64.Build.0 = Debug|Any CPU
+		{5FAF9175-D161-4622-8317-76BBCA0D1BDD}.Release|x64.ActiveCfg = Release|Any CPU
+		{5FAF9175-D161-4622-8317-76BBCA0D1BDD}.Release|x64.Build.0 = Release|Any CPU
+		{1CF96827-D410-41AA-AB5B-D6DB712EC454}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1CF96827-D410-41AA-AB5B-D6DB712EC454}.Debug|x64.Build.0 = Debug|Any CPU
+		{1CF96827-D410-41AA-AB5B-D6DB712EC454}.Release|x64.ActiveCfg = Release|Any CPU
+		{1CF96827-D410-41AA-AB5B-D6DB712EC454}.Release|x64.Build.0 = Release|Any CPU
+		{6DED0A26-B170-4CF8-9703-D7BF20D9545B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6DED0A26-B170-4CF8-9703-D7BF20D9545B}.Debug|x64.Build.0 = Debug|Any CPU
+		{6DED0A26-B170-4CF8-9703-D7BF20D9545B}.Release|x64.ActiveCfg = Release|Any CPU
+		{6DED0A26-B170-4CF8-9703-D7BF20D9545B}.Release|x64.Build.0 = Release|Any CPU
+		{AE36F2A5-987D-41EA-BB40-8576B00C33C7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AE36F2A5-987D-41EA-BB40-8576B00C33C7}.Debug|x64.Build.0 = Debug|Any CPU
+		{AE36F2A5-987D-41EA-BB40-8576B00C33C7}.Release|x64.ActiveCfg = Release|Any CPU
+		{AE36F2A5-987D-41EA-BB40-8576B00C33C7}.Release|x64.Build.0 = Release|Any CPU
+		{C319ADE3-2850-44C0-AD18-99122B23CC1A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C319ADE3-2850-44C0-AD18-99122B23CC1A}.Debug|x64.Build.0 = Debug|Any CPU
+		{C319ADE3-2850-44C0-AD18-99122B23CC1A}.Release|x64.ActiveCfg = Release|Any CPU
+		{C319ADE3-2850-44C0-AD18-99122B23CC1A}.Release|x64.Build.0 = Release|Any CPU
+		{15B47447-5BAB-494C-B879-68B7624F3B39}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15B47447-5BAB-494C-B879-68B7624F3B39}.Debug|x64.Build.0 = Debug|Any CPU
+		{15B47447-5BAB-494C-B879-68B7624F3B39}.Release|x64.ActiveCfg = Release|Any CPU
+		{15B47447-5BAB-494C-B879-68B7624F3B39}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {469E4CEF-289E-424F-B419-BF9E8FF01702}
+	EndGlobalSection
+EndGlobal
