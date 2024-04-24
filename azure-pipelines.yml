@@ -25,6 +25,11 @@ steps:
   inputs:
     versionSpec: '6.9.1'
 
+- task: NuGetAuthenticate@1
+  inputs:
+    nuGetServiceConnections: 'NuGet'
+    forceReinstallCredentialProvider: true
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
