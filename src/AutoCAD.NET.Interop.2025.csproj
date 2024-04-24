@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+	<PropertyGroup>
+		<AutoCadVersion>2025</AutoCadVersion>
+		<Platform>x64</Platform>
+		<Version>$(AutoCadVersion).25.0.58</Version>
+		<TargetPackagePath>net48</TargetPackagePath>
+	</PropertyGroup>
+
+	<Import Project="AutoCAD.NET.Interop.Nuget.csproj">
+	</Import>
+</Project>

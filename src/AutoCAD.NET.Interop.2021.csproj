@@ -2,8 +2,8 @@
   <PropertyGroup>
     <AutoCadVersion>2021</AutoCadVersion>
     <Platform>x64</Platform>
-    <Version>24.0.47</Version>
-    <TargetPath>net48</TargetPath>
+    <Version>$(AutoCadVersion).24.0.47</Version>
+    <TargetPackagePath>net48</TargetPackagePath>
   </PropertyGroup>
 
   <Import Project="AutoCAD.NET.Interop.Nuget.csproj">

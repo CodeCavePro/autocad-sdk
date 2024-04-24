@@ -5,8 +5,8 @@
     -->
     <AutoCadVersion>2016</AutoCadVersion>
     <Platform>x64</Platform>
-    <Version>20.1.49</Version>
-    <TargetPath>net45</TargetPath>
+    <Version>$(AutoCadVersion).20.1.49</Version>
+    <TargetPackagePath>net45</TargetPackagePath>
   </PropertyGroup>
 
   <Import Project="AutoCAD.NET.Interop.Nuget.csproj">

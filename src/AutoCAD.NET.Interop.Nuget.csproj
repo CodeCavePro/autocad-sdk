@@ -39,13 +39,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="../lib/$(AutoCadVersion)/x64/*" Pack="true" PackagePath="lib\$(TargetPath)" />
+    <Content Include="../lib/$(AutoCadVersion)/x64/*" Pack="true" PackagePath="lib\$(TargetPackagePath)" />
     <Content Include="../assets/LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="../assets/AutoCAD-2014.png" Pack="true" PackagePath="AutoCAD.png" Condition="'$(AutoCadVersion)' == '2016' Or '$(AutoCadVersion)' == '2017'" />
-    <Content Include="../assets/AutoCAD-2018.png" Pack="true" PackagePath="AutoCAD.png" Condition="'$(AutoCadVersion)' != '2016' And '$(AutoCadVersion)' != '2017'" />
+    <Content Include="../assets/AutoCAD-2018.png" Pack="true" PackagePath="AutoCAD.png" Condition="'$(AutoCadVersion)' != '2016' And '$(AutoCadVersion)' != '2017' And '$(AutoCadVersion)' != '2023'" />
+    <Content Include="../assets/AutoCAD-2023.png" Pack="true" PackagePath="AutoCAD.png" Condition="'$(AutoCadVersion)' == '2023'" />
+
   </ItemGroup>
 
   <!--
